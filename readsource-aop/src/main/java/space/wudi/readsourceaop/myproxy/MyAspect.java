@@ -9,7 +9,7 @@ public class MyAspect {
     @Bean
     public UserService getUserServiceProxy(){
         UserService targetObject = new UserServiceImpl();
-        return new ProxyAroundUserService(
+        ProxyAroundUserService.MyInvocationHandler h = new ProxyAroundUserService.MyInvocationHandler(
                 targetObject,
                 // around
                 (processor, args)->{
@@ -29,6 +29,7 @@ public class MyAspect {
                     System.out.println("in AfterThrowing with exception: "+throwable);
                     throw throwable;
                 }
-            );
+        );
+        return new ProxyAroundUserService(targetObject, h);
     }
 }
