@@ -1,8 +1,8 @@
-package space.wudi.readsourceaop.myproxy;
+package space.wudi.readsourceaop.jdkdynamicproxy.myproxy;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
-import space.wudi.readsourceaop.myproxy.proxy.ProxyAroundUserService;
+import space.wudi.readsourceaop.jdkdynamicproxy.myproxy.proxy.ProxyAroundUserService;
 
 @Configuration
 public class MyAspect {

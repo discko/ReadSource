@@ -1,7 +1,7 @@
-package space.wudi.readsourceaop.myproxy.proxy;
+package space.wudi.readsourceaop.jdkdynamicproxy.myproxy.proxy;
 
-import space.wudi.readsourceaop.bean.User;
-import space.wudi.readsourceaop.myproxy.UserService;
+import space.wudi.readsourceaop.jdkdynamicproxy.bean.User;
+import space.wudi.readsourceaop.jdkdynamicproxy.myproxy.UserService;
 
 import java.lang.reflect.InvocationHandler;
 import java.lang.reflect.Method;

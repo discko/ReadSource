@@ -1,9 +1,10 @@
-package space.wudi.readsourceaop.myproxy;
+package space.wudi.readsourceaop.jdkdynamicproxy.myproxy;
 
-import space.wudi.readsourceaop.bean.User;
+import space.wudi.readsourceaop.jdkdynamicproxy.bean.User;
 
 public class UserServiceImpl implements UserService{
 
+    @SuppressWarnings("all")
     @Override
     public User login(String username) throws Throwable {
         System.out.println("now logging in...");

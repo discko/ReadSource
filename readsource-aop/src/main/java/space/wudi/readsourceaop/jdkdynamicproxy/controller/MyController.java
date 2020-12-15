@@ -1,10 +1,10 @@
-package space.wudi.readsourceaop.controller;
+package space.wudi.readsourceaop.jdkdynamicproxy.controller;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
-import space.wudi.readsourceaop.bean.User;
-import space.wudi.readsourceaop.service.JdkDynamicService;
+import space.wudi.readsourceaop.jdkdynamicproxy.bean.User;
+import space.wudi.readsourceaop.jdkdynamicproxy.service.JdkDynamicService;
 
 @RestController
 public class MyController {

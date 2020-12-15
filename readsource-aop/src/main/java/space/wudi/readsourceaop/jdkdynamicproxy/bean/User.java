@@ -1,4 +1,4 @@
-package space.wudi.readsourceaop.bean;
+package space.wudi.readsourceaop.jdkdynamicproxy.bean;
 
 public class User {
     private String username;

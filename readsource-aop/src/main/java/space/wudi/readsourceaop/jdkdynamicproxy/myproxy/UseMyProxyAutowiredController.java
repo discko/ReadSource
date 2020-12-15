@@ -1,9 +1,9 @@
-package space.wudi.readsourceaop.myproxy;
+package space.wudi.readsourceaop.jdkdynamicproxy.myproxy;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
-import space.wudi.readsourceaop.bean.User;
+import space.wudi.readsourceaop.jdkdynamicproxy.bean.User;
 
 @RestController
 public class UseMyProxyAutowiredController {

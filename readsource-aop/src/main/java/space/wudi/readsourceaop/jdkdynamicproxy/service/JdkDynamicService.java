@@ -1,4 +1,4 @@
-package space.wudi.readsourceaop.service;
+package space.wudi.readsourceaop.jdkdynamicproxy.service;
 
 public interface JdkDynamicService {
     String useJdkDynamicProxy(String id);

@@ -1,7 +1,7 @@
-package space.wudi.readsourceaop.myproxy.proxy;
+package space.wudi.readsourceaop.jdkdynamicproxy.myproxy.proxy;
 
-import space.wudi.readsourceaop.bean.User;
-import space.wudi.readsourceaop.myproxy.UserService;
+import space.wudi.readsourceaop.jdkdynamicproxy.bean.User;
+import space.wudi.readsourceaop.jdkdynamicproxy.myproxy.UserService;
 
 import java.util.Arrays;
 
@@ -32,7 +32,7 @@ public class ProxyUserService implements UserService {
         System.out.println("in AfterReturning with args: " + Arrays.toString(args)+" and rtVal: "+rtVal);
         ((User)rtVal).setEmail("modified by ProxyUserService");
     }
-
+    @SuppressWarnings("all")
     private void afterThrow(Throwable throwable, String...args) throws Throwable{
         System.out.println("in AfterThrowing with args: " + Arrays.toString(args)+" and exception: "+throwable);
         throw new RuntimeException("meet a exception: "+ throwable.getMessage());

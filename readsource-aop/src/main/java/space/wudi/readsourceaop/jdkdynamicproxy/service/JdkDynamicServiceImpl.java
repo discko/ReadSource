@@ -1,7 +1,7 @@
-package space.wudi.readsourceaop.service;
+package space.wudi.readsourceaop.jdkdynamicproxy.service;
 
 import org.springframework.stereotype.Service;
-import space.wudi.readsourceaop.annotation.AspectJoinPoint;
+import space.wudi.readsourceaop.jdkdynamicproxy.annotation.AspectJoinPoint;
 
 @Service
 public class JdkDynamicServiceImpl implements JdkDynamicService {

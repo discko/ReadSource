@@ -1,11 +1,10 @@
-package space.wudi.readsourceaop.aspect;
+package space.wudi.readsourceaop.jdkdynamicproxy.aspect;
 
 import org.aspectj.lang.JoinPoint;
 import org.aspectj.lang.ProceedingJoinPoint;
 import org.aspectj.lang.annotation.*;
-import org.springframework.core.Ordered;
 import org.springframework.stereotype.Component;
-import space.wudi.readsourceaop.bean.User;
+import space.wudi.readsourceaop.jdkdynamicproxy.bean.User;
 
 import java.util.Arrays;
 import java.util.concurrent.atomic.AtomicInteger;
@@ -17,7 +16,7 @@ public class LogAspect {
     private static AtomicInteger i = new AtomicInteger(1);
 
     //配置切入点，所有满足条件的函数都会被加入监控
-    @Pointcut("execution(* space.wudi.readsourceaop.controller..*.*(..))")
+    @Pointcut("execution(* space.wudi.readsourceaop.jdkdynamicproxy.controller..*.*(..))")
     public void log(){}
 
     //配置Before通知

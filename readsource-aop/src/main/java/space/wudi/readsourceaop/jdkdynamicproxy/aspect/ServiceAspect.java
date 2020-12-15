@@ -1,4 +1,4 @@
-package space.wudi.readsourceaop.aspect;
+package space.wudi.readsourceaop.jdkdynamicproxy.aspect;
 
 import org.aspectj.lang.JoinPoint;
 import org.aspectj.lang.ProceedingJoinPoint;
@@ -11,7 +11,7 @@ public class ServiceAspect {
     // if need to save the class file of the proxy
     // set VM option:
     // -Dsun.misc.ProxyGenerator.saveGeneratedFiles=true
-    @Pointcut("@annotation(space.wudi.readsourceaop.annotation.AspectJoinPoint)")
+    @Pointcut("@annotation(space.wudi.readsourceaop.jdkdynamicproxy.annotation.AspectJoinPoint)")
     public void pointcut(){}
 
     @Around("pointcut()")

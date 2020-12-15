@@ -1,9 +1,9 @@
-package space.wudi.readsourceaop.myproxy;
+package space.wudi.readsourceaop.jdkdynamicproxy.myproxy;
 
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
-import space.wudi.readsourceaop.bean.User;
-import space.wudi.readsourceaop.myproxy.proxy.ProxyUserService;
+import space.wudi.readsourceaop.jdkdynamicproxy.bean.User;
+import space.wudi.readsourceaop.jdkdynamicproxy.myproxy.proxy.ProxyUserService;
 
 import javax.annotation.PostConstruct;
 
